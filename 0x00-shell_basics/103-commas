@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1a | awk '{printf "%s%s",sep,$0; sep=", " } END {print""}' | sed -e 's/^\.\///g' -e 's/\/*$/\//g' -e 's/\/\.\//\//g' -e 's/\/\.$//g' -e 's/\/\.\.\///g' -e 's/^\.\.\///g' | LC_COLLATE=C sort -df --key=1.2 | sed '$a\'
+ls -xamp
