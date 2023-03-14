@@ -1,2 +1,2 @@
 #!/bin/bash
-find PATH=$PATH:$HOME/bin -type d | wc -l
+find PATH=$PATH:$HOME -type d | wc -l
